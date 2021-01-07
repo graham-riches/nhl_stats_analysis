@@ -1,0 +1,467 @@
+Rank,Player,Team,Positions
+1,Nathan MacKinnon,COL,C
+2,Connor McDavid,EDM,C F
+3,Leon Draisaitl,EDM,C LW
+4,Artemi Panarin,NYR,LW F
+5,Alex Ovechkin,WSH,LW F
+6,Auston Matthews,TOR,C F
+7,Andrei Vasilevskiy,TB,G
+8,Jack Eichel,BUF,C F
+9,Sebastian Aho,CAR,C
+10,Patrick Kane,CHI,RW F
+11,Sidney Crosby,PIT,C F
+12,Andrei Svechnikov,CAR,LW RW
+13,Mika Zibanejad,NYR,C
+14,Mikko Rantanen,COL,RW F
+15,Elias Pettersson,VAN,C
+16,Connor Hellebuyck,WPG,G
+17,Mitchell Marner,TOR,RW F
+18,Brad Marchand,BOS,LW F
+19,Jake Guentzel,PIT,LW RW
+20,Patrik Laine,WPG,LW RW
+21,Brayden Point,TB,C F
+22,John Carlson,WSH,D
+23,Victor Hedman,TB,D
+24,Evgeni Malkin,PIT,C F
+25,Jonathan Huberdeau,FLA,LW F
+26,John Tavares,TOR,C F
+27,Matthew Tkachuk,CGY,LW F
+28,Steven Stamkos,TB,C F
+29,Max Pacioretty,VGK,LW F
+30,Carter Hart,PHI,G
+31,Gabriel Landeskog,COL,C LW
+32,Roman Josi,NSH,D
+33,J.T. Miller,VAN,LW RW
+34,Tuukka Rask,BOS,G
+35,Blake Wheeler,WPG,RW F
+36,Brady Tkachuk,OTT,LW
+37,Robin Lehner,VGK,G
+38,Ilya Samsonov,WSH,G
+39,Patrice Bergeron,BOS,C F
+40,Jordan Binnington,STL,G
+41,Dougie Hamilton,CAR,D
+42,Mark Stone,VGK,RW F
+43,Teuvo Teravainen,CAR,LW RW F
+44,Aleksander Barkov,FLA,C F
+45,Mark Scheifele,WPG,C F
+46,David Pastrnak,BOS,RW F
+47,Johnny Gaudreau,CGY,LW F
+48,Sean Couturier,PHI,C F
+49,Cale Makar,COL,D
+50,Ryan O'Reilly,STL,C
+51,Carey Price,MTL,G
+52,Frederik Andersen,TOR,G
+53,Brent Burns,SJ,D
+54,Taylor Hall,ARI,LW F
+55,Brendan Gallagher,MTL,RW F
+56,Evgeny Kuznetsov,WSH,C F
+57,Tom Wilson,WSH,RW F
+58,Igor Shesterkin,NYR,G
+59,Darcy Kuemper,ARI,G
+60,Elias Lindholm,CGY,C RW F
+61,Quinn Hughes,VAN,D
+62,Claude Giroux,PHI,LW C RW
+63,Filip Forsberg,NSH,LW F
+64,Evander Kane,SJ,LW F
+65,Jamie Benn,DAL,C LW
+66,Philipp Grubauer,COL,G
+67,Alex Pietrangelo,STL,D
+68,Brock Boeser,VAN,RW
+69,Brayden Schenn,STL,C LW F
+70,Jonathan Marchessault,VGK,C  LW
+71,Tristan Jarry,PIT,G
+72,Kyle Connor,WPG,LW F
+73,Pierre-Luc Dubois,CBJ,C
+74,Anton Khudobin,DAL,G
+75,Anders Lee,NYI,LW
+76,Morgan Rielly,TOR,D
+77,Torey Krug,BOS,D
+78,Blake Coleman,TB,LW RW
+79,Mathew Barzal,NYI,C F
+80,Marc-Andre Fleury,VGK,G
+81,Ryan Nugent-Hopkins,EDM,LW C
+82,Kris Letang,PIT,D
+83,Neal Pionk,WPG,D
+84,Miro Heiskanen,DAL,D
+85,Travis Konecny,PHI,RW
+86,Pavel Francouz,COL,G
+87,Zach Werenski,CBJ,D
+88,Timo Meier,SJ,LW RW
+89,Patric Hornqvist,PIT,RW F
+90,Erik Karlsson,SJ,D
+91,Seth Jones,CBJ,D
+92,Rasmus Dahlin,BUF,D
+93,Chris Kreider,NYR,LW F
+94,Logan Couture,SJ,C F
+95,Jacob Markstrom,VAN,G
+96,Jaroslav Halak,BOS,G
+97,Nicklas Backstrom,WSH,C F
+98,Dylan Larkin,DET,C
+99,Tomas Tatar,MTL,LW RW
+100,John Klingberg,DAL,D
+101,Kevin Fiala,MIN,LW F
+102,Mike Hoffman,FLA,LW RW
+103,Tyson Barrie,TOR,D
+104,Alexander Radulov,DAL,RW F
+105,David Perron,STL,LW RW F
+106,Reilly Smith,VGK,RW F
+107,Ben Bishop,DAL,G
+108,Nazem Kadri,COL,C F
+109,Viktor Arvidsson,NSH,LW RW
+110,Shea Theodore,VGK,D
+111,Kailer Yamamoto,EDM,C
+112,Sean Monahan,CGY,C F
+113,Jakub Vrana,WSH,LW RW F
+114,Sam Reinhart,BUF,C RW F
+115,Alex DeBrincat,CHI,LW RW
+116,Dustin Brown,LA,LW RW F
+117,Anze Kopitar,LA,C F
+118,Petr Mrazek,CAR,G
+119,Ryan Strome,NYR,RW F
+120,Jonathan Toews,CHI,C F
+121,Bo Horvat,VAN,C F
+122,William Nylander,TOR,C RW F
+123,Shea Weber,MTL,D
+124,Kyle Palmieri,NJ,RW F
+125,Anthony DeAngelo,NYR,D
+126,T.J. Oshie,WSH,RW F
+127,Ryan Pulock,NYI,D
+128,Braden Holtby,VAN,G
+129,Josh Anderson,CBJ,RW F
+130,Tomas Hertl,SJ,C LW
+131,Jeff Petry,MTL,D
+132,Oliver Ekman-Larsson,ARI,D
+133,Victor Olofsson,BUF,RW
+134,Ivan Provorov,PHI,D
+135,Kirill Kaprizov,MIN,LW
+136,Jaden Schwartz,STL,LW F
+137,Mark Giordano,CGY,D
+138,Rasmus Ristolainen,BUF,D
+139,Matt Duchene,NSH,C F
+140,Thomas Chabot,OTT,D
+141,Max Domi,MTL,C LW
+142,Jack Hughes,NJ,C
+143,Anthony Cirelli,TB,C
+144,Charlie McAvoy,BOS,D
+145,Elivs Merzlikins,CBJ,G
+146,Nikolaj Ehlers,WPG,LW RW F
+147,Juuse Saros,NSH,G
+148,Darnell Nurse,EDM,D
+149,Joonas Korpisalo,CBJ,G
+150,Dominik Kubalik,CHI,LW
+151,Sergei Bobrovsky,FLA,G
+152,Brock Nelson,NYI,C LW
+153,Nico Hischier,NJ,C
+154,Phillip Danault,MTL,C F
+155,Brandon Tanev,PIT,LW RW F
+156,Tyler Toffoli,VAN,C RW F
+157,Cam Atkinson,CBJ,RW F
+158,Alexis Lafreniere,NYR,LW
+159,Ondrej Palat,TB,LW F
+160,Nick Foligno,CBJ,LW RW F
+161,Anthony Mantha,DET,LW RW
+162,Vladimir Tarasenko,STL,RW F
+163,Bryan Rust,PIT,LW RW
+164,Jeff Skinner,BUF,C LW
+165,Keith Yandle,FLA,D
+166,Evgenii Dadonov,FLA,LW RW
+167,Zach Hyman,TOR,C F
+168,Thatcher Demko,VAN,G
+169,John Gibson,ANA,G
+170,Lawson Crouse,ARI,LW F
+171,Adam Fox,NYR,D
+172,Rickard Rakell,ANA,LW  RW
+173,Eric Staal,MIN,C F
+174,Oliver Bjorkstrand,CBJ,RW F
+175,William Karlsson,VGK,C
+176,Ilya Sorokin,NYI,G
+177,Ryan Ellis,NSH,D
+178,Nicholas Suzuki,MTL,C
+179,Mikhail Sergachev,TB,D
+180,Jacob Trouba,NYR,D
+181,Colton Parayko,STL,D
+182,Zach Parise,MIN,LW F
+183,Semyon Varlamov,NYI,G
+184,Jakub Voracek,PHI,LW RW F
+185,Alex Stalock,MIN,G
+186,Andre Burakovsky,COL,LW F
+187,Jason Zucker,PIT,LW RW
+188,Kevin Hayes,PHI,C
+189,Craig Smith,NSH,RW F
+190,Ryan Suter,MIN,D
+191,Denis Gurianov,DAL,RW
+192,Drew Doughty,LA,D
+193,Aaron Ekblad,FLA,D
+194,Tanner Pearson,VAN,LW F
+195,Mathew Dumba,MIN,D
+196,Tyler Bertuzzi,DET,LW
+197,Nikita Gusev,NJ,LW
+198,Ryan Johansen,NSH,C F
+199,Ryan Graves,COL,D
+200,Mikko Koskinen,EDM,G
+201,Matt Murray,PIT,G
+202,Ryan Reaves,VGK,RW F
+203,Mikael Backlund,CGY,C F
+204,Clayton Keller,ARI,LW RW
+205,Paul Stastny,VGK,C F
+206,Vincent Trocheck,CAR,C F
+207,Phil Kessel,ARI,RW F
+208,Jordan Staal,CAR,C LW F
+209,David Krejci,BOS,C F
+210,Devan Dubnyk,MIN,G
+211,Pavel Buchnevich,NYR,LW F
+212,Mackenzie Blackwood,FA,G
+213,Josh Bailey,NYI,RW F
+214,Corey Crawford,CHI,G
+215,Alexander Killorn,TB,C LW F
+216,Kaapo Kakko,NYR,RW
+217,Jean-Gabriel Pageau,NYI,C F
+218,Alexandar Georgiev,NYR,G
+219,Roope Hintz,DAL,LW
+220,Tyler Seguin,DAL,C F
+221,Nate Schmidt,VGK,D
+222,William Carrier,VGK,LW
+223,Cam Talbot,CGY,G
+224,Boone Jenner,CBJ,C LW F
+225,Jake Muzzin,TOR,D
+226,Joel Kiviranta,DAL,LW
+227,Erik Cernak,TB,D
+228,Dylan Strome,CHI,C F
+229,Nicholas Robertson,TOR,LW
+230,Joel Armia,MTL,RW F
+231,Kevin Shattenkirk,TB,D
+232,Joe Pavelski,DAL,C RW F
+233,Alex Tuch,VGK,RW
+234,Jonathan Drouin,MTL,LW F
+235,Anthony Beauvillier,NYI,LW F
+236,Marcus Foligno,MIN,LW F
+237,Kasperi Kapanen,TOR,RW F
+238,James Van Riemsdyk,PHI,LW F
+239,Brandon Saad,CHI,LW RW F
+240,Jaccob Slavin,CAR,D
+241,Milan Lucic,CGY,LW F
+242,Charlie Coyle,BOS,C RW F
+243,Frank Vatrano,FLA,LW  RW
+244,Filip Hronek,DET,D
+245,Andrew Mangiapane,CGY,LW
+246,Mikael Granlund,NSH,LW RW
+247,Nick Schmaltz,ARI,C F
+248,Nick Bjugstad,PIT,C F
+249,Tyler Johnson,TB,LW RW
+250,Ryan Getzlaf,ANA,C F
+251,Jared Spurgeon,MIN,D
+252,Jordan Eberle,NYI,RW F
+253,Samuel Girard,COL,D
+254,Jake Allen,STL,G
+255,Adam Henrique,ANA,C F
+256,Yanni Gourde,TB,LW F
+257,Carl Soderberg,ARI,C F
+258,Tim Stutzle,OTT,C LW
+259,Artturi Lehkonen,MTL,LW
+260,Jared McCann,PIT,C F
+261,Quinton Byfield,LA,C
+262,Jonathan Quick,LA,G
+263,Mattias Ekholm,NSH,D
+264,Jake DeBrusk,BOS,LW RW
+265,Conor Garland,ARI,RW
+266,Cody Glass,FA,C
+267,Jesse Puljujarvi,FA,RW F
+268,Andreas Johnsson,TOR,LW
+269,Kevin Labanc,SJ,LW RW
+270,Anthony Duclair,OTT,LW RW F
+271,Devon Toews,NYI,D
+272,Alexander Edler,VAN,D
+273,Malcolm Subban,CHI,G
+274,Nino Niederreiter,CAR,LW RW
+275,Duncan Keith,CHI,D
+276,Alec Martinez,VGK,D
+277,Ben Chiarot,MTL,D
+278,Martin Necas,CAR,C
+279,Mats Zuccarello,MIN,RW F
+280,Alex Turcotte,LA,C
+281,Andrew Shaw,CHI,C RW F
+282,Carter Hutton,BUF,G
+283,Jakob Chychrun,ARI,D
+284,Esa Lindell,DAL,D
+285,Ilya Mikheyev,TOR,RW
+286,Justin Schultz,PIT,D
+287,Brandon Pirri,FA,C F
+288,Alex Galchenyuk,MIN,C LW
+289,Nikita Zadorov,COL,D
+290,Chris Wagner,BOS,C F
+291,Barclay Goodrow,TB,C RW F
+292,Derick Brassard,NYI,C F
+293,Vladislav Namestnikov,COL,C F
+294,Jesper Bratt,NJ,RW
+295,James Reimer,CAR,G
+296,Miles Wood,NJ,LW F
+297,James Neal,EDM,RW F
+298,Matt Grzelcyk,BOS,D
+299,Barrett Hayton,ARI,C
+300,Gabriel Vilardi,LA,C
+301,Dmitry Orlov,WSH,D
+302,Jakob Silfverberg,ANA,RW F
+303,Ondrej Kase,BOS,RW
+304,Alex Iafallo,LA,C
+305,Garnet Hathaway,WSH,RW F
+306,Lars Eller,WSH,C F
+307,Ryan Dzingel,CAR,LW RW
+308,Connor Brown,OTT,RW F
+309,Andreas Athanasiou,EDM,C LW
+310,Jesper Fast,NYR,RW F
+311,Linus Ullmark,BUF,G
+312,Valeri Nichushkin,COL,RW F
+313,Cory Conacher,FA,LW F
+314,Calvin de Haan,CHI,D
+315,Dmytro Timashov,DET,RW
+316,Vince Dunn,STL,D
+317,Jake Virtanen,VAN,RW F
+318,Trevor Zegras,ANA,C
+319,Matt Roy,LA,D
+320,Filip Zadina,DET,LW
+321,Micheal Ferland,VAN,LW  RW
+322,Josh Morrissey,WPG,D
+323,Zack Kassian,EDM,RW F
+324,Radko Gudas,WSH,D
+325,Matt Martin,NYI,LW
+326,Marcus Johansson,BUF,LW RW F
+327,Leo Komarov,NYI,C RW F
+328,Scott Laughton,PHI,C F
+329,Nick Ritchie,BOS,LW F
+330,Richard Panik,WSH,LW F
+331,Gustav Nyquist,CBJ,LW RW F
+332,Brandon Carlo,BOS,D
+333,Erik Haula,FLA,C LW F
+334,Alexandre Texier,CBJ,C LW
+335,Derek Stepan,ARI,C F
+336,Alex Goligoski,ARI,D
+337,Mark Borowiecki,OTT,D
+338,Tyler Myers,VAN,D
+339,Owen Tippett,FLA,RW
+340,Christian Dvorak,ARI,C LW F
+341,P.K. Subban,NJ,D
+342,Adrian Kempe,LA,LW
+343,Drake Batherson,FA,C
+344,Joe Thornton,SJ,C F
+345,Brenden Dillon,WSH,D
+346,Noel Acciari,FLA,C F
+347,T.J. Brodie,CGY,D
+348,Cal Clutterbuck,NYI,RW F
+349,Manuel Wiederer,FA,C
+350,Erik Gustafsson,FA,D
+351,Sam Steel,ANA,C F
+352,Calvin Petersen,LA,G
+353,Alex Chiasson,EDM,RW F
+354,Adam Lowry,WPG,LW
+355,Luke Kunin,MIN,C
+356,Joel Eriksson Ek,MIN,C
+357,Josh Norris,FA,C
+358,Brayden McNabb,VGK,D
+359,Ryan Poehling,MTL,LW
+360,Erik Gustafsson,CGY,D
+361,Brett Connolly,FLA,RW F
+362,Ryan Donato,MIN,LW
+363,John Marino,PIT,NA
+364,Travis Zajac,NJ,C F
+365,Calle Jarnkrok,NSH,C F
+366,Wayne Simmonds,BUF,RW F
+367,Justin Faulk,STL,D
+368,Brendan Lemieux,NYR,LW F
+369,Colin White,OTT,C
+370,Jeff Carter,LA,C F
+371,Mikko Koivu,MIN,C F
+372,Austin Wagner,LA,LW
+373,Jesperi Kotkaniemi,MTL,C
+374,Jack Roslovic,WPG,C F
+375,Patrick Maroon,TB,LW F
+376,Rasmus Sandin,TOR,D
+377,Antti Raanta,ARI,G
+378,Connor Murphy,CHI,D
+379,Jimmy Howard,DET,G
+380,David Savard,CBJ,D
+381,Brady Skjei,CAR,D
+382,Colin Campbell,FA,RW
+383,Marcus Pettersson,PIT,D
+384,Zach Sanford,STL,C
+385,Jordan Weal,MTL,C F
+386,Nick Cousins,VGK,C
+387,Shayne Gostisbehere,PHI,D
+388,Alexander True,SJ,C
+389,Mike Green,EDM,D
+390,Brandon Montour,BUF,D
+391,Vitali Kravtsov,NYR,RW
+392,Tyler Pitlick,PHI,RW F
+393,Brian Dumoulin,PIT,D
+394,Liam Foudy,CBJ,C
+395,Tyler Ennis,EDM,C LW F
+396,Martin Kaut,FA,RW
+397,Evan Bouchard,EDM,D
+398,Andrew Copp,WPG,C F
+399,Connor McMichael,WSH,C
+400,Adam Pelech,NYI,D
+401,Ty Smith,FA,D
+402,Alexander Volkov,TB,LW
+403,Cam Fowler,ANA,D
+404,Ville Heinola,FA,D
+405,Sam Bennett,CGY,C F
+406,Bowen Byram,COL,D
+407,Pekka Rinne,NSH,G
+408,Martin Jones,SJ,G
+409,Jake Bean,CAR,D
+410,David Rittich,CGY,G
+411,Alexander Romanov,MTL,D
+412,Morgan Frost,PHI,C
+413,Mike Smith,EDM,G
+414,Kirby Dach,CHI,C
+415,Thomas Greiss,NYI,G
+416,Dylan Cozens,FA,C
+417,Curtis McElhinney,TB,G
+418,Joel Farabee,PHI,LW
+419,Pheonix Copley,WSH,G
+420,Erik Brannstrom,FA,D
+421,Oliver Wahlstrom,FA,C
+422,Brian Elliott,PHI,G
+423,Adam Gaudette,VAN,LW
+424,Jack Campbell,TOR,G
+425,Tyler Benson,EDM,LW
+426,Laurent Brossoit,WPG,G
+427,Robby Fabbri,DET,C LW F
+428,Damon Severson,NJ,D
+429,Anthony Stolarz,FA,G
+430,Collin Delia,CHI,G
+431,Jonathan Bernier,DET,G
+432,Jack Studnicka,BOS,C
+433,Chris Driedger,FLA,G
+434,Filip Chytil,NYR,LW
+435,Marcus Hogberg,OTT,G
+436,Casey DeSmith,PIT,G
+437,Joonas Donskoi,COL,RW F
+438,Ville Husso,STL,G
+439,Troy Terry,ANA,RW
+440,Lucas Raymond,DET,LW
+441,Jordan Kyrou,STL,C
+442,Alex Formenton,FA,LW
+443,Moritz Seider,FA,D
+444,Martin Frk,LA,RW F
+445,Marco Rossi,MIN,C
+446,Sami Vatanen,CAR,D
+447,Maxime Comtois,FA,LW
+448,Nolan Patrick,PHI,C
+449,Ryan McDonagh,TB,D
+450,Eeli Tolvanen,NSH,LW
+451,Jack Quinn,BUF,C
+452,Danton Heinen,ANA,C LW F
+453,Oskar Lindblom,PHI,RW
+454,Erik Johnson,COL,D
+455,Will Butcher,NJ,D
+456,Victor Soderstrom,ARI,D
+457,Carter Verhaeghe,TB,NA
+458,Nicolas Aube-Kubel,PHI,RW F
+459,Phillip Tomasino,FA,C
+460,Dustin Byfuglien,FA,D
+461,Cory Schneider,NJ,G
+462,Jake Gardiner,CAR,D
+463,Oscar Klefbom,EDM,D
+464,Mathieu Perreault,WPG,C LW F
+465,Corey Perry,DAL,RW F
+466,Thomas Harley,DAL,D
