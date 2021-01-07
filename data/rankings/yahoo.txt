@@ -1,0 +1,466 @@
+1	Nathan MacKinnon (COL - C)	2	1
+2	Connor McDavid (EDM - C,F)	1	2
+3	Leon Draisaitl (EDM - C,LW)	3	3
+4	Artemi Panarin (NYR - LW,F)	4	5
+5	Alex Ovechkin (WSH - LW,F)	6	4
+6	Auston Matthews (TOR - C,F)	5	9
+7	Andrei Vasilevskiy (TB - G)	7	7
+8	Jack Eichel (BUF - C,F)	11	6
+9	Sebastian Aho (CAR - C)	9	10
+10	Patrick Kane (CHI - RW,F)	8	13
+11	Sidney Crosby (PIT - C,F)	14	12
+12	Andrei Svechnikov (CAR - LW,RW)	22	11
+13	Mika Zibanejad (NYR - C)	20	16
+14	Mikko Rantanen (COL - RW,F)	10	27
+15	Elias Pettersson (VAN - C)	13	29
+16	Connor Hellebuyck (WPG - G)	19	24
+17	Mitchell Marner (TOR - RW,F)	15	30
+18	Brad Marchand (BOS - LW,F)	28	22
+19	Jake Guentzel (PIT - LW,RW)	27	23
+20	Patrik Laine (WPG - LW,RW)	30	21
+21	Brayden Point (TB - C,F)	12	40
+22	John Carlson (WSH - D)	17	37
+23	Victor Hedman (TB - D)	16	39
+24	Evgeni Malkin (PIT - C,F)	24	31
+25	Jonathan Huberdeau (FLA - LW,F)	18	38
+26	John Tavares (TOR - C,F)	31	25
+27	Matthew Tkachuk (CGY - LW,F)	37	20
+28	Steven Stamkos (TB - C,F)	45	15
+29	Max Pacioretty (VGK - LW,F)	47	17
+30	Carter Hart (PHI - G)	39	26
+31	Gabriel Landeskog (COL - C,LW)	32	33
+32	Roman Josi (NSH - D)	33	34
+33	J.T. Miller (VAN - LW,RW)	49	19
+34	Tuukka Rask (BOS - G)	40	28
+35	Blake Wheeler (WPG - RW,F)	55	14
+36	Brady Tkachuk (OTT - LW)	65	8
+37	Robin Lehner (VGK - G)	29	47
+38	Ilya Samsonov (WSH - G)	41	35
+39	Patrice Bergeron (BOS - C,F)	34	44
+40	Jordan Binnington (STL - G)	61	18
+41	Dougie Hamilton (CAR - D)	42	41
+42	Mark Stone (VGK - RW,F)	25	62
+43	Teuvo Teravainen (CAR - LW,RW,F)	35	53
+44	Aleksander Barkov (FLA - C,F)	23	66
+45	Mark Scheifele (WPG - C,F)	26	64
+46	David Pastrnak (BOS - RW,F)	56	36
+47	Johnny Gaudreau (CGY - LW,F)	46	49
+48	Sean Couturier (PHI - C,F)	57	48
+49	Cale Makar (COL - D)	21	88
+50	Ryan O'Reilly (STL - C)	60	51
+51	Carey Price (MTL - G)	51	63
+52	Frederik Andersen (TOR - G)	64	54
+53	Brent Burns (SJ - D)	63	60
+54	Taylor Hall (ARI - LW,F)	48	80
+55	Brendan Gallagher (MTL - RW,F)	86	46
+56	Evgeny Kuznetsov (WSH - C,F)	53	79
+57	Tom Wilson (WSH - RW,F)	115	32
+58	Igor Shesterkin (NYR - G)	36	106
+59	Darcy Kuemper (ARI - G)	94	43
+60	Elias Lindholm (CGY - C,RW,F)	82	56
+61	Quinn Hughes (VAN - D)	38	211
+62	Claude Giroux (PHI - LW,C,RW)	83	58
+63	Filip Forsberg (NSH - LW,F)	71	70
+64	Evander Kane (SJ - LW,F)	87	55
+65	Jamie Benn (DAL - C,LW)	178	42
+66	Philipp Grubauer (COL - G)	43	176
+67	Alex Pietrangelo (STL - D)	50	94
+68	Brock Boeser (VAN - RW)	44	168
+69	Brayden Schenn (STL - C,LW,F)	93	52
+70	Jonathan Marchessault (VGK - C, LW)	140	45
+71	Tristan Jarry (PIT - G)	89	59
+72	Kyle Connor (WPG - LW,F)	79	69
+73	Pierre-Luc Dubois (CBJ - C)	74	74
+74	Anton Khudobin (DAL - G)	81	68
+75	Anders Lee (NYI - LW)	122	50
+76	Morgan Rielly (TOR - D)	52	111
+77	Torey Krug (BOS - D)	54	146
+78	Blake Coleman (TB - LW,RW)	357	57
+79	Mathew Barzal (NYI - C,F)	58	119
+80	Marc-Andre Fleury (VGK - G)	59	164
+81	Ryan Nugent-Hopkins (EDM - LW,C)	68	92
+82	Kristopher Letang (PIT - D)	72	89
+83	Neal Pionk (WPG - D)	119	61
+84	Miro Heiskanen (DAL - D)	62	139
+85	Travis Konecny (PHI - RW)	92	73
+86	Pavel Francouz (COL - G)	118	65
+87	Zachary Werenski (CBJ - D)	66	138
+88	Timo Meier (SJ - LW,RW)	95	72
+89	Patric Hornqvist (PIT - RW,F)	179	67
+90	Erik Karlsson (SJ - D)	67	160
+91	Seth Jones (CBJ - D)	69	147
+92	Rasmus Dahlin (BUF - D)	70	181
+93	Chris Kreider (NYR - LW,F)	136	71
+94	Logan Couture (SJ - C,F)	75	97
+95	Jacob Markstrom (VAN - G)	73	122
+96	Jaroslav Halak (BOS - G)	165	75
+97	Nicklas Backstrom (WSH - C,F)	76	113
+98	Dylan Larkin (DET - C)	104	76
+99	Tomas Tatar (MTL - LW,RW)	239	77
+100	John Klingberg (DAL - D)	77	238
+101	Kevin Fiala (MIN - LW,F)	78	158
+102	Mike Hoffman (FLA - LW,RW)	143	78
+103	Tyson Barrie (TOR - D)	80	210
+104	Alexander Radulov (DAL - RW,F)	139	81
+105	David Perron (STL - LW,RW,F)	144	82
+106	Reilly Smith (VGK - RW,F)	177	83
+107	Ben Bishop (DAL - G)	338	84
+108	Nazem Kadri (COL - C,F)	84	105
+109	Viktor Arvidsson (NSH - LW,RW)	233	85
+110	Shea Theodore (VGK - D)	85	143
+111	Kailer Yamamoto (EDM - C)	108	86
+112	Sean Monahan (CGY - C,F)	124	87
+113	Jakub Vrana (WSH - LW,RW,F)	88	129
+114	Sam Reinhart (BUF - C,RW,F)	90	198
+115	Alex DeBrincat (CHI - LW,RW)	109	90
+116	Dustin Brown (LA - LW,RW,F)	218	91
+117	Anze Kopitar (LA - C,F)	91	107
+118	Petr Mrazek (CAR - G)	97	96
+119	Ryan Strome (NYR - RW,F)	132	93
+120	Jonathan Toews (CHI - C,F)	157	95
+121	Bo Horvat (VAN - C,F)	96	120
+122	William Nylander (TOR - C,RW,F)	99	98
+123	Shea Weber (MTL - D)	98	118
+124	Kyle Palmieri (NJ - RW,F)	102	99
+125	Anthony DeAngelo (NYR - D)	100	161
+126	T.J. Oshie (WSH - RW,F)	152	100
+127	Ryan Pulock (NYI - D)	172	101
+128	Braden Holtby (VAN - G)	101	140
+129	Josh Anderson (CBJ - RW,F)	175	102
+130	Tomas Hertl (SJ - C,LW)	103	145
+131	Jeff Petry (MTL - D)	131	103
+132	Oliver Ekman-Larsson (ARI - D)	155	104
+133	Victor Olofsson (BUF - RW)	105	162
+134	Ivan Provorov (PHI - D)	106	109
+135	Kirill Kaprizov (MIN - LW)	107
+136	Jaden Schwartz (STL - LW,F)	128	108
+137	Mark Giordano (CGY - D)	110	194
+138	Rasmus Ristolainen (BUF - D)	187	110
+139	Matt Duchene (NSH - C,F)	111	163
+140	Thomas Chabot (OTT - D)	112	177
+141	Max Domi (MTL - C,LW)	145	112
+142	Jack Hughes (NJ - C)	113
+143	Anthony Cirelli (TB - C)	159	114
+144	Charlie McAvoy (BOS - D)	114	159
+145	Elivs Merzlikins (CBJ - G)	125	115
+146	Nikolaj Ehlers (WPG - LW,RW,F)	223	116
+147	Juuse Saros (NSH - G)	116	136
+148	Darnell Nurse (EDM - D)	198	117
+149	Joonas Korpisalo (CBJ - G)	117	148
+150	Dominik Kubalik (CHI - LW)	120	135
+151	Sergei Bobrovsky (FLA - G)	121	206
+152	Brock Nelson (NYI - C,LW)	141	121
+153	Nico Hischier (NJ - C)	123	232
+154	Phillip Danault (MTL - C,F)	221	123
+155	Brandon Tanev (PIT - LW,RW,F)		124
+156	Tyler Toffoli (VAN - C,RW,F)	163	125
+157	Cam Atkinson (CBJ - RW,F)	126	131
+158	Alexis Lafreniere (NYR - LW)	127	126
+159	Ondrej Palat (TB - LW,F)	137	127
+160	Nick Foligno (CBJ - LW,RW,F)	369	128
+161	Anthony Mantha (DET - LW,RW)	129	188
+162	Vladimir Tarasenko (STL - RW,F)	345	130
+163	Bryan Rust (PIT - LW,RW)	130	179
+164	Jeff Skinner (BUF - C,LW)	180	132
+165	Keith Yandle (FLA - D)	133	199
+166	Evgenii Dadonov (FLA - LW,RW)	160	133
+167	Zach Hyman (TOR - C,F)	298	134
+168	Thatcher Demko (VAN - G)	134	288
+169	John Gibson (ANA - G)	135	212
+170	Lawson Crouse (ARI - LW,F)		137
+171	Adam Fox (NYR - D)	138	150
+172	Rickard Rakell (ANA - LW, RW)	169	141
+173	Eric Staal (MIN - C,F)	142	241
+174	Oliver Bjorkstrand (CBJ - RW,F)	156	142
+175	William Karlsson (VGK - C)	154	144
+176	Ilya Sorokin (NYI - G)	146	249
+177	Ryan Ellis (NSH - D)	147	156
+178	Nicholas Suzuki (MTL - C)	148	256
+179	Mikhail Sergachev (TB - D)	149	175
+180	Jacob Trouba (NYR - D)	167	149
+181	Colton Parayko (STL - D)	150	187
+182	Zach Parise (MIN - LW,F)	211	151
+183	Semyon Varlamov (NYI - G)	151	193
+184	Jakub Voracek (PHI - LW,RW,F)	195	152
+185	Alex Stalock (MIN - G)	292	153
+186	Andre Burakovsky (COL - LW,F)	153	233
+187	Jason Zucker (PIT - LW,RW)	200	154
+188	Kevin Hayes (PHI - C)	190	155
+189	Craig Smith (NSH - RW,F)	220	157
+190	Ryan Suter (MIN - D)	158	234
+191	Denis Gurianov (DAL - RW)	161	237
+192	Drew Doughty (LA - D)	162	173
+193	Aaron Ekblad (FLA - D)	164	166
+194	Tanner Pearson (VAN - LW,F)	252	165
+195	Mathew Dumba (MIN - D)	166	242
+196	Tyler Bertuzzi (DET - LW)	186	167
+197	Nikita Gusev (NJ - LW)	168	267
+198	Ryan Johansen (NSH - C,F)	193	169
+199	Ryan Graves (COL - D)	289	170
+200	Mikko Koskinen (EDM - G)	170	226
+201	Matt Murray (PIT - G)	171	280
+202	Ryan Reaves (VGK - RW,F)		171
+203	Mikael Backlund (CGY - C,F)	214	172
+204	Clayton Keller (ARI - LW,RW)	173	190
+205	Paul Stastny (VGK - C,F)	174	240
+206	Vincent Trocheck (CAR - C,F)	207	174
+207	Phil Kessel (ARI - RW,F)	176	178
+208	Jordan Staal (CAR - C,LW,F)	277	180
+209	David Krejci (BOS - C,F)	181	252
+210	Devan Dubnyk (MIN - G)	182	259
+211	Pavel Buchnevich (NYR - LW,F)	188	182
+212	Mackenzie Blackwood (FA - G)	183	183
+213	Josh Bailey (NYI - RW,F)	184	289
+214	Corey Crawford (CHI - G)	278	184
+215	Alexander Killorn (TB - C,LW,F)	285	185
+216	Kaapo Kakko (NYR - RW)	185
+217	Jean-Gabriel Pageau (NYI - C,F)	232	186
+218	Alexandar Georgiev (NYR - G)	189	346
+219	Roope Hintz (DAL - LW)	191	189
+220	Tyler Seguin (DAL - C,F)	328	191
+221	Nate Schmidt (VGK - D)	192	321
+222	William Carrier (VGK - LW)		192
+223	Cam Talbot (CGY - G)	194	235
+224	Boone Jenner (CBJ - C,LW,F)	274	195
+225	Jake Muzzin (TOR - D)	208	196
+226	Joel Kiviranta (DAL - LW)	196
+227	Erik Cernak (TB - D)	321	197
+228	Dylan Strome (CHI - C,F)	197	294
+229	Nicholas Robertson (TOR - LW)	199
+230	Joel Armia (MTL - RW,F)	256	200
+231	Kevin Shattenkirk (TB - D)	201	286
+232	Joe Pavelski (DAL - C,RW,F)	241	201
+233	Alex Tuch (VGK - RW)	210	202
+234	Jonathan Drouin (MTL - LW,F)	202	205
+235	Anthony Beauvillier (NYI - LW,F)	203	218
+236	Marcus Foligno (MIN - LW,F)		203
+237	Kasperi Kapanen (TOR - RW,F)	204	273
+238	James Van Riemsdyk (PHI - LW,F)	219	204
+239	Brandon Saad (CHI - LW,RW,F)	205	245
+240	Jaccob Slavin (CAR - D)	206	222
+241	Milan Lucic (CGY - LW,F)		207
+242	Charlie Coyle (BOS - C,RW,F)	319	208
+243	Frank Vatrano (FLA - LW, RW)	312	209
+244	Filip Hronek (DET - D)	209
+245	Andrew Mangiapane (CGY - LW)	212	301
+246	Mikael Granlund (NSH - LW,RW)	234	213
+247	Nick Schmaltz (ARI - C,F)	213
+248	Nick Bjugstad (PIT - C,F)		214
+249	Tyler Johnson (TB - LW,RW)	311	215
+250	Ryan Getzlaf (ANA - C,F)	215	228
+251	Jared Spurgeon (MIN - D)	216	244
+252	Jordan Eberle (NYI - RW,F)	242	216
+253	Samuel Girard (COL - D)	217	335
+254	Jake Allen (STL - G)	254	217
+255	Adam Henrique (ANA - C,F)	275	219
+256	Yanni Gourde (TB - LW,F)	301	220
+257	Carl Soderberg (ARI - C,F)		221
+258	Tim Stutzle (OTT - C,LW)	222
+259	Artturi Lehkonen (MTL - LW)		223
+260	Jared McCann (PIT - C,F)		224
+261	Quinton Byfield (LA - C)	224
+262	Jonathan Quick (LA - G)	225	246
+263	Mattias Ekholm (NSH - D)	230	225
+264	Jake DeBrusk (BOS - LW,RW)	226	243
+265	Conor Garland (ARI - RW)		227
+266	Cody Glass (FA - C)	227
+267	Jesse Puljujarvi (FA - RW,F)	228
+268	Andreas Johnsson (TOR - LW)	229	283
+269	Kevin Labanc (SJ - LW,RW)	253	229
+270	Anthony Duclair (OTT - LW,RW,F)	358	230
+271	Devon Toews (NYI - D)	231	329
+272	Alexander Edler (VAN - D)	251	231
+273	Malcolm Subban (CHI - G)	235	269
+274	Nino Niederreiter (CAR - LW,RW)	238	236
+275	Duncan Keith (CHI - D)	236
+276	Alec Martinez (VGK - D)	237
+277	Ben Chiarot (MTL - D)		239
+278	Martin Necas (CAR - C)	240	331
+279	Mats Zuccarello (MIN - RW,F)	243
+280	Alex Turcotte (LA - C)	244
+281	Andrew Shaw (CHI - C,RW,F)	245	324
+282	Carter Hutton (BUF - G)	246	344
+283	Jakob Chychrun (ARI - D)	247	305
+284	Esa Lindell (DAL - D)		247
+285	Ilya Mikheyev (TOR - RW)	361	248
+286	Justin Schultz (PIT - D)	248
+287	Brandon Pirri (FA - C,F)	249
+288	Alex Galchenyuk (MIN - C,LW)	250	302
+289	Nikita Zadorov (COL - D)		250
+290	Chris Wagner (BOS - C,F)		251
+291	Barclay Goodrow (TB - C,RW,F)		253
+292	Derick Brassard (NYI - C,F)		254
+293	Vladislav Namestnikov (COL - C,F)	386	255
+294	Jesper Bratt (NJ - RW)	255
+295	James Reimer (CAR - G)	257	349
+296	Miles Wood (NJ - LW,F)		257
+297	James Neal (EDM - RW,F)	343	258
+298	Matt Grzelcyk (BOS - D)	258	336
+299	Barrett Hayton (ARI - C)	259
+300	Gabriel Vilardi (LA - C)	260	328
+301	Dmitry Orlov (WSH - D)		260
+302	Jakob Silfverberg (ANA - RW,F)	265	261
+303	Ondrej Kase (BOS - RW)	261
+304	Alex Iafallo (LA - C)	262	277
+305	Garnet Hathaway (WSH - RW,F)		262
+306	Lars Eller (WSH - C,F)		263
+307	Ryan Dzingel (CAR - LW,RW)	263
+308	Connor Brown (OTT - RW,F)	382	264
+309	Andreas Athanasiou (EDM - C,LW)	264
+310	Jesper Fast (NYR - RW,F)		265
+311	Linus Ullmark (BUF - G)	266	347
+312	Valeri Nichushkin (COL - RW,F)		266
+313	Cory Conacher (FA - LW,F)	267
+314	Calvin de Haan (CHI - D)		268
+315	Dmytro Timashov (DET - RW)	268
+316	Vince Dunn (STL - D)	269	311
+317	Jake Virtanen (VAN - RW,F)		270
+318	Trevor Zegras (ANA - C)	270
+319	Matt Roy (LA - D)		271
+320	Filip Zadina (DET - LW)	271
+321	Micheal Ferland (VAN - LW, RW)	306	272
+322	Josh Morrissey (WPG - D)	272	296
+323	Zack Kassian (EDM - RW,F)	273	276
+324	Radko Gudas (WSH - D)	326	274
+325	Matt Martin (NYI - LW)		275
+326	Marcus Johansson (BUF - LW,RW,F)	276
+327	Leo Komarov (NYI - C,RW,F)		278
+328	Scott Laughton (PHI - C,F)		279
+329	Nick Ritchie (BOS - LW,F)	279
+330	Richard Panik (WSH - LW,F)	280	334
+331	Gustav Nyquist (CBJ - LW,RW,F)	281
+332	Brandon Carlo (BOS - D)		281
+333	Erik Haula (FLA - C,LW,F)	303	282
+334	Alexandre Texier (CBJ - C,LW)	282
+335	Derek Stepan (ARI - C,F)	283	323
+336	Alex Goligoski (ARI - D)	284	319
+337	Mark Borowiecki (OTT - D)		284
+338	Tyler Myers (VAN - D)		285
+339	Owen Tippett (FLA - RW)	286
+340	Christian Dvorak (ARI - C,LW,F)	287	287
+341	P.K. Subban (NJ - D)	288
+342	Adrian Kempe (LA - LW)		290
+343	Drake Batherson (FA - C)	290
+344	Joe Thornton (SJ - C,F)	291
+345	Brenden Dillon (WSH - D)		291
+346	Noel Acciari (FLA - C,F)		292
+347	T.J. Brodie (CGY - D)	293
+348	Cal Clutterbuck (NYI - RW,F)		293
+349	Manuel Wiederer (FA - C)	294
+350	Erik Gustafsson (FA - D)	309	295
+351	Sam Steel (ANA - C,F)	295
+352	Calvin Petersen (LA - G)	296	357
+353	Alex Chiasson (EDM - RW,F)	297
+354	Adam Lowry (WPG - LW)		297
+355	Luke Kunin (MIN - C)	373	298
+356	Joel Eriksson Ek (MIN - C)		299
+357	Josh Norris (FA - C)	299
+358	Brayden McNabb (VGK - D)		300
+359	Ryan Poehling (MTL - LW)	300
+360	Erik Gustafsson (CGY - D)	302
+361	Brett Connolly (FLA - RW,F)		303
+362	Ryan Donato (MIN - LW)	304
+363	John Marino (PIT - NA)		304
+364	Travis Zajac (NJ - C,F)	305
+365	Calle Jarnkrok (NSH - C,F)		306
+366	Wayne Simmonds (BUF - RW,F)	396	307
+367	Justin Faulk (STL - D)	307	309
+368	Brendan Lemieux (NYR - LW,F)		308
+369	Colin White (OTT - C)	308
+370	Jeff Carter (LA - C,F)	317	310
+371	Mikko Koivu (MIN - C,F)	310
+372	Austin Wagner (LA - LW)		312
+373	Jesperi Kotkaniemi (MTL - C)	327	313
+374	Jack Roslovic (WPG - C,F)	313
+375	Patrick Maroon (TB - LW,F)		314
+376	Rasmus Sandin (TOR - D)	314
+377	Antti Raanta (ARI - G)	315	341
+378	Connor Murphy (CHI - D)		315
+379	Jimmy Howard (DET - G)	316
+380	David Savard (CBJ - D)		316
+381	Brady Skjei (CAR - D)		317
+382	Colin Campbell (FA - RW)	318
+383	Marcus Pettersson (PIT - D)		318
+384	Zach Sanford (STL - C)	354	320
+385	Jordan Weal (MTL - C,F)	320
+386	Nick Cousins (VGK - C)		322
+387	Shayne Gostisbehere (PHI - D)	322
+388	Alexander True (SJ - C)	323
+389	Mike Green (EDM - D)	324
+390	Brandon Montour (BUF - D)		325
+391	Vitali Kravtsov (NYR - RW)	325
+392	Tyler Pitlick (PHI - RW,F)		326
+393	Brian Dumoulin (PIT - D)		327
+394	Liam Foudy (CBJ - C)	329
+395	Tyler Ennis (EDM - C,LW,F)	359	330
+396	Martin Kaut (FA - RW)	330
+397	Evan Bouchard (EDM - D)	331
+398	Andrew Copp (WPG - C,F)		332
+399	Connor McMichael (WSH - C)	332
+400	Adam Pelech (NYI - D)		333
+401	Ty Smith (FA - D)	333
+402	Alexander Volkov (TB - LW)	334
+403	Cam Fowler (ANA - D)	335
+404	Ville Heinola (FA - D)	336
+405	Sam Bennett (CGY - C,F)		337
+406	Bowen Byram (COL - D)	337
+407	Pekka Rinne (NSH - G)	363	338
+408	Martin Jones (SJ - G)	372	339
+409	Jake Bean (CAR - D)	339
+410	David Rittich (CGY - G)	392	340
+411	Alexander Romanov (MTL - D)	340
+412	Morgan Frost (PHI - C)	341
+413	Mike Smith (EDM - G)		342
+414	Kirby Dach (CHI - C)	342
+415	Thomas Greiss (NYI - G)	346	343
+416	Dylan Cozens (FA - C)	344
+417	Curtis McElhinney (TB - G)	393	345
+418	Joel Farabee (PHI - LW)	347
+419	Pheonix Copley (WSH - G)		348
+420	Erik Brannstrom (FA - D)	348
+421	Oliver Wahlstrom (FA - C)	349
+422	Brian Elliott (PHI - G)		350
+423	Adam Gaudette (VAN - LW)	350
+424	Jack Campbell (TOR - G)		351
+425	Tyler Benson (EDM - LW)	351
+426	Laurent Brossoit (WPG - G)		352
+427	Robby Fabbri (DET - C,LW,F)	352
+428	Damon Severson (NJ - D)	353
+429	Anthony Stolarz (FA - G)		353
+430	Collin Delia (CHI - G)	388	354
+431	Jonathan Bernier (DET - G)		355
+432	Jack Studnicka (BOS - C)	355
+433	Chris Driedger (FLA - G)		356
+434	Filip Chytil (NYR - LW)	356
+435	Marcus Hogberg (OTT - G)		358
+436	Casey DeSmith (PIT - G)		359
+437	Joonas Donskoi (COL - RW,F)	360
+438	Ville Husso (STL - G)		360
+439	Troy Terry (ANA - RW)	362
+440	Lucas Raymond (DET - LW)	364
+441	Jordan Kyrou (STL - C)	365
+442	Alex Formenton (FA - LW)	366
+443	Moritz Seider (FA - D)	367
+444	Martin Frk (LA - RW,F)	368
+445	Marco Rossi (MIN - C)	370
+446	Sami Vatanen (CAR - D)	371
+447	Maxime Comtois (FA - LW)	374
+448	Nolan Patrick (PHI - C)	375
+449	Ryan McDonagh (TB - D)	376
+450	Eeli Tolvanen (NSH - LW)	377
+451	Jack Quinn (BUF - C)	378
+452	Danton Heinen (ANA - C,LW,F)	379
+453	Oskar Lindblom (PHI - RW)	380
+454	Erik Johnson (COL - D)	381
+455	Will Butcher (NJ - D)	383
+456	Victor Soderstrom (ARI - D)	384
+457	Carter Verhaeghe (TB - NA)	385
+458	Nicolas Aube-Kubel (PHI - RW,F)	387
+459	Phillip Tomasino (FA - C)	389
+460	Dustin Byfuglien (FA - D)	390
+461	Cory Schneider (NJ - G)	391
+462	Jake Gardiner (CAR - D)	394
+463	Oscar Klefbom (EDM - D)	395
+464	Mathieu Perreault (WPG - C,LW,F)	397
+465	Corey Perry (DAL - RW,F)	398
+466	Thomas Harley (DAL - D)	399
