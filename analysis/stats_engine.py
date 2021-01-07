@@ -35,10 +35,30 @@ class StatsEngine:
                 skater.add_basic_stats(year, stats)
                 self._skaters[name] = skater
 
+    def add_advanced_skater_from_csv(self, filename: str) -> None:
+        """
+        Add advanced skater data to the stats engine from a csv file
+        :param filename: the csv file containing advanced stat data
+        :return: None
+        """
+        data = open(filename, 'r').readlines()
+
+        # ignore the csv header
+        for line in data[1:]:
+            name, stats = SkaterSerializer.create_advanced_stats(line)
+            if name in self._skaters:
+                self._skaters[name].add_advanced_stats(year, stats)
+            else:
+                skater = Skater(name)
+                skater.add_advanced_stats(year, stats)
+                self._skaters[name] = skater
+
 
 if __name__ == '__main__':
     engine = StatsEngine()
     years = [2015, 2016, 2017, 2018, 2019]
     for year in years:
         engine.add_basic_skater_from_csv('../data/skaters/basic/{}.csv'.format(year))
+        engine.add_advanced_skater_from_csv('../data/skaters/advanced/{}.csv'.format(year))
+
     pause = 1
