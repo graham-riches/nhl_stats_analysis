@@ -9,45 +9,47 @@
 
 
 class BasicSkaterStats:
+    fields = ['team', 'position', 'games_played', 'goals', 'assists', 'pts', 'plus_minus',
+              'penalty_mins', 'shots_on_goal', 'game_winning_goals', 'power_play_goals',
+              'power_play_assists', 'short_handed_goals', 'short_handed_assists', 'hits', 'blocked_shots']
+
     def __init__(self, stats: list):
         """
         Construct a BasicSkaterStats object. This contains standard fantasy categories and converts the data types into a
         dictionary with proper data types (int, etc.)
         :param stats: list of strings of stats fields
         """
-        fields = ['team', 'position', 'games_played', 'goals', 'assists', 'pts', 'plus_minus',
-                  'penalty_mins', 'shots_on_goal', 'game_winning_goals', 'power_play_goals',
-                  'power_play_assists', 'short_handed_goals', 'short_handed_assists', 'hits', 'blocked_shots']
         types = [str, str]
-        types.extend([int for i in range(len(fields) - len(types))])
-        self._stats = dict()
-        for idx, key in enumerate(fields):
+        types.extend([int for i in range(len(self.fields) - len(types))])
+        self.stats = dict()
+        for idx, key in enumerate(self.fields):
             try:
-                self._stats[key] = types[idx](stats[idx])
+                self.stats[key] = types[idx](stats[idx])
             except Exception as ce:
                 print('Basic Stats Error: {}'.format(ce))
-                self._stats[key] = types[idx]()
+                self.stats[key] = types[idx]()
 
 
 class AdvancedSkaterStats:
+    fields = ['age', 'cf', 'ca', 'c_pct', 'c_pct_rel', 'ff', 'fa', 'f_pct', 'f_pct_rel', 'sh_pct', 'sv_pct',
+              'pdo', 'off_zone_starts', 'def_zone_starts', 'toi_60', 'toi_ev', 'takeaways', 'giveaways',
+              'ev_plus_minus', 'shot_attempts', 'shot_through_pct']
+
     def __init__(self, stats: list):
         """
         Construct a new AdvancedSkaterStats object. This contains advanced information like Corsi, Fenwick, PDO, etc.
         :param stats: list of stats
         """
-        fields = ['age', 'cf', 'ca', 'c_pct', 'c_pct_rel', 'ff', 'fa', 'f_pct', 'f_pct_rel', 'sh_pct', 'sv_pct',
-                  'pdo', 'off_zone_starts', 'def_zone_starts', 'toi_60', 'toi_ev', 'takeaways', 'giveaways',
-                  'ev_plus_minus', 'shot_attempts', 'shot_through_pct']
         types = [int, float, float, float, float, float, float, float, float, float, float,
                  float, float, float, str, str, int, int,
                  float, int, float]
-        self._stats = dict()
-        for idx, key in enumerate(fields):
+        self.stats = dict()
+        for idx, key in enumerate(self.fields):
             try:
-                self._stats[key] = types[idx](stats[idx])
+                self.stats[key] = types[idx](stats[idx])
             except Exception as ce:
                 print('Advanced Stats Error: {}'.format(ce))
-                self._stats[key] = types[idx]()
+                self.stats[key] = types[idx]()
 
 
 class SkaterSerializer:
@@ -77,6 +79,12 @@ class SkaterSerializer:
         tokens_of_interest = [tokens[2]]
         tokens_of_interest.extend(tokens[6:])
         return player_name, AdvancedSkaterStats(tokens_of_interest)
+
+    @staticmethod
+    def get_all_stat_fields() -> list:
+        fields = BasicSkaterStats.fields
+        fields.extend(AdvancedSkaterStats.fields)
+        return fields
 
 
 if __name__ == '__main__':
