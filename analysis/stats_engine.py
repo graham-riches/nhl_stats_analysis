@@ -79,6 +79,19 @@ class StatsEngine:
         """
         self.read_from_csv(filename, self.basic_skater_parser, year)
 
+    def constrain_by_year(self, year: int) -> None:
+        """
+        drop all players that do not have data from a specific year
+        :param year: the year to check
+        :return: None
+        """
+        drop_list = []
+        for player, skater in self.skaters.items():
+            if year not in skater.basic_stats.keys() and year not in skater.advanced_stats.keys():
+                drop_list.append(player)
+        for player in drop_list:
+            del self.skaters[player]
+
     def get_stats_by_year(self, year: int) -> pd.DataFrame:
         """
         get a set of player data by year with combined basic and advanced stats
@@ -98,22 +111,50 @@ class StatsEngine:
         record.index = record['player_name']
         return record
 
+    @staticmethod
+    def keep_categories(df: pd.DataFrame, categories: list) -> pd.DataFrame:
+        """
+        keep a set of categories in a rankings dataframe
+        :param df: the raw dataframe
+        :param categories: set of categories
+        :return: dataframe with only categories as columns
+        """
+        new_df = df.loc[:, categories]
+        return new_df
 
-def calculate_z_score_rankings(df: pd.DataFrame, categories: list) -> pd.DataFrame:
-    """
-    calculate the z-score rankings on dataframe of states and return a new dataframe with the z_scores concatenated
-    :param df: original dataframe
-    :param categories: the categories of the data to parse
-    :return: dataframe with z_score rankings
-    """
-    games_played = df['games_played'].to_numpy()
-    data = df.to_numpy()
-    mean = np.mean(data, axis=0)
-    std = np.std(data, axis=0)
-    mean_subtracted = np.subtract(data, mean)
-    for idx, val in enumerate(mean):
-        mean_subtracted[:, idx] = np.divide(mean_subtracted[:, idx], games_played)
-    z_scores = np.divide(mean_subtracted, std)
-    for idx, category in enumerate(categories):
-        df['{}_z'.format(category)] = z_scores[:, idx]
-    return df
+    @staticmethod
+    def filter_by_category(df: pd.DataFrame, category: str, predicate: callable) -> pd.DataFrame:
+        """
+        apply a filtering operation to a dataframe column
+        :param df: dataframe to filter
+        :param category: category to filter on
+        :param predicate: filter predicate for the column
+        :return: modified dataframe
+        """
+        series = df[category].to_list()
+        results = list(map(predicate, series))
+        new_df = df[results]
+        return new_df
+
+    @staticmethod
+    def calculate_z_score_rankings(df: pd.DataFrame, categories: list) -> pd.DataFrame:
+        """
+        calculate the z-score rankings on dataframe of states and return a new dataframe with the z_scores concatenated
+        :param df: original dataframe
+        :param categories: the categories of the data to parse
+        :return: dataframe with z_score rankings
+        """
+        games_played = df['games_played'].to_numpy()
+        data = df.to_numpy()
+        mean = np.mean(data, axis=0)
+        std = np.std(data, axis=0)
+        mean_subtracted = np.subtract(data, mean)
+        for idx, val in enumerate(mean):
+            mean_subtracted[:, idx] = np.divide(mean_subtracted[:, idx], games_played)
+        z_scores = np.divide(mean_subtracted, std)
+        for idx, category in enumerate(categories):
+            df['{}_z'.format(category)] = z_scores[:, idx]
+        return df
+
+
+

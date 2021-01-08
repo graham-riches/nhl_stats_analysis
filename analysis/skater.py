@@ -47,3 +47,11 @@ class Skater:
         basic_stats = self.basic_stats[year]
         advanced_stats = self.advanced_stats[year]
         return {**basic_stats.stats, **advanced_stats.stats}
+
+    def project_stats(self, last_seasons: list,) -> BasicSkaterStats:
+        """
+        project the next season of stats based on a sequence of prior seasons
+        :param last_seasons:
+        :return:
+        """
+        pass

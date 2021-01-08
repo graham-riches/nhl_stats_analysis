@@ -82,7 +82,8 @@ class SkaterSerializer:
 
     @staticmethod
     def get_all_stat_fields() -> list:
-        fields = BasicSkaterStats.fields
+        fields = []
+        fields.extend(BasicSkaterStats.fields)
         fields.extend(AdvancedSkaterStats.fields)
         return fields
 
