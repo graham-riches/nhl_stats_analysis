@@ -48,14 +48,21 @@ class Skater:
         advanced_stats = self.advanced_stats[year]
         return {**basic_stats.stats, **advanced_stats.stats}
 
-    def project_basic_stats(self, last_season: int) -> BasicSkaterStats:
+    def project_stats(self, project_season: int) -> None:
         """
         project the next season of stats based on historical data
-        :param last_season: the latest available season
+        :param project_season: the year to project. Requires player data from the previous season
         :return:
         """
         seasons = self.basic_stats.keys()
-        seasonal_data = []
+        if project_season - 1 not in seasons:
+            print('ERROR: player {} missing stats information for {}'.format(self.name, project_season - 1))
+            return
+        seasonal_data_basic = list()
+        seasonal_data_advanced = list()
         for season in seasons:
-            seasonal_data.append([val for key, val in self.basic_stats[season]])
-        pass
+            seasonal_data_basic.append([val for key, val in self.basic_stats[season]])
+            seasonal_data_advanced.append([val for key, val in self.advanced_stats[season]])
+        # average the data across the seasons now
+
+
