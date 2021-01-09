@@ -132,9 +132,7 @@ class StatsEngine:
         :return: modified dataframe
         """
         series = df[category].to_list()
-        results = list(map(predicate, series))
-        new_df = df[results]
-        return new_df
+        return df[list(map(predicate, series))]
 
     @staticmethod
     def calculate_z_score_rankings(df: pd.DataFrame, categories: list) -> pd.DataFrame:
@@ -156,5 +154,42 @@ class StatsEngine:
             df['{}_z'.format(category)] = z_scores[:, idx]
         return df
 
+    @staticmethod
+    def apply_positional_adjustment(df: pd.DataFrame, categories: list, adjustments: dict) -> pd.DataFrame:
+        """
+        apply a multiplier correction to a category based on position.
+        :param df: the raw dataframe
+        :param categories: list of categories to filter the DF with
+        :param adjustments: dictionary of positional adjustments
+        :return: modified dataframe
+        """
+        adjusted_categories = ['{}_adj'.format(category) for category in categories]
+        fantasy_df = df.loc[:, categories]
+        for idx, category in enumerate(adjusted_categories):
+            fantasy_df[category] = df[categories[idx]]
 
+        for index, row in fantasy_df.iterrows():
+            player_data = df.loc[index]
+            modifiers = adjustments[player_data['position']]
+            for idx, weight in enumerate(modifiers):
+                row[adjusted_categories[idx]] = row[adjusted_categories[idx]] * weight
+        for category in adjusted_categories:
+            df[category] = fantasy_df[category]
+        return df
 
+    @staticmethod
+    def calculate_fantasy_score(df: pd.DataFrame, categories: list) -> pd.DataFrame:
+        """
+        calculate an overall fantasy score based on a set of categories
+        :param df: the raw dataframe
+        :param categories: list of categories
+        :return: dataframe with fantasy points
+        """
+        adj_categories = ['{}_adj'.format(category) for category in categories]
+        category_sets = {'fantasy_points': adj_categories}
+        for field, cs in category_sets.items():
+            fp_df = df.loc[:, cs]
+            data = fp_df.to_numpy()
+            points = np.sum(data, axis=1)
+            df[field] = points
+        return df

@@ -1,4 +1,5 @@
-[
+{
+    "stats_categories": [
     "games_played",
     "goals",
     "assists",
@@ -31,4 +32,14 @@
     "ev_plus_minus",
     "shot_attempts",
     "shot_through_pct"
-]
+    ],
+    "display_categories": ["position", "toi_60", "toi_ev"],
+    "fantasy_categories": ["goals", "assists", "power_play_goals", "short_handed_goals", "game_winning_goals",
+                           "penalty_mins"],
+    "positional_adjustments" : {
+        "D": [2.0, 2.5, 2.0, 3.0, 2.0, 0.25],
+        "C": [1.0, 1.5, 2.0, 3.0, 2.0, 0.25],
+        "LW": [1.0, 1.5, 2.0, 3.0, 2.0, 0.25],
+        "RW": [1.0, 1.5, 2.0, 3.0, 2.0, 0.25]
+    }
+}

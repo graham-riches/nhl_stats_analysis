@@ -254,7 +254,7 @@ Ryan Hartman,MIN,RW,69,9,11,20,4,69,114,1,1,0,0,0,44,54
 Colton Sissons,NSH,RW,57,9,6,15,-2,20,52,2,0,0,1,0,84,41
 Marcus Johansson,MIN,LW,60,9,21,30,-12,20,87,1,1,5,0,0,39,22
 Darren Helm,DET,C,68,9,7,16,-6,37,102,0,0,0,1,1,88,26
-Patrick Maroon,TB,LW,64,9,14,23,4,71,80,1,1,2,0,0,104,13
+Pat Maroon,TB,LW,64,9,14,23,4,71,80,1,1,2,0,0,104,13
 Filip Hronek,DET,D,65,9,22,31,-38,46,125,0,1,9,0,0,105,74
 Carter Verhaeghe,FLA,C,52,9,4,13,-9,8,57,1,1,0,0,0,29,8
 Jimmy Vesey,TOR,LW,64,9,11,20,12,15,93,2,0,1,1,0,43,20
@@ -330,7 +330,7 @@ Jacob Trouba,NYR,D,70,7,20,27,-12,61,168,1,4,4,0,2,173,128
 Brock McGinn,CAR,LW,68,7,10,17,-4,17,93,1,0,0,2,0,80,28
 Antoine Roussel,VAN,LW,41,7,6,13,0,43,55,1,1,1,0,0,44,14
 Jonathan Drouin,MON,C,27,7,8,15,-6,14,51,1,1,3,0,0,25,5
-Alexander Steen,STL,LW,55,7,10,17,7,12,71,0,0,1,0,0,26,47
+Alex Steen,STL,LW,55,7,10,17,7,12,71,0,0,1,0,0,26,47
 Drew Doughty,LA,D,67,7,28,35,-16,36,141,2,5,9,0,1,106,87
 Joe Thornton,TOR,C,70,7,24,31,-19,34,76,1,3,5,0,0,20,29
 P.K. Subban,NJ,D,68,7,11,18,-21,79,151,3,2,4,0,0,88,90
@@ -409,7 +409,7 @@ Shayne Gostisbehere,PHI,D,42,5,7,12,-4,20,73,1,1,4,0,0,14,37
 Erik Cernak,TB,D,67,5,7,12,11,59,125,1,0,0,0,0,172,97
 Matt Martin,NYI,LW,55,5,3,8,-1,40,49,2,0,0,0,0,242,24
 Troy Stecher,DET,D,69,5,12,17,10,32,86,0,0,0,0,0,69,70
-Maxime Comtois,ANH,LW,29,5,6,11,-4,24,32,0,2,1,0,0,61,8
+Max Comtois,ANH,LW,29,5,6,11,-4,24,32,0,2,1,0,0,61,8
 Sean Walker,LA,D,70,5,19,24,-12,26,127,0,0,5,0,0,81,84
 Nicolas Roy,VGK,C,28,5,5,10,3,8,42,1,1,0,0,0,39,7
 Curtis Lazar,BUF,C,38,5,5,10,-3,9,33,0,0,0,0,1,70,24
@@ -545,7 +545,7 @@ Joel Kellman,SJ,C,31,3,4,7,-1,4,31,1,0,0,0,1,28,18
 Matthew Highmore,CHI,C,36,2,4,6,-1,6,35,0,0,0,0,0,38,9
 Ryan Murray,NJ,D,27,2,7,9,-9,4,32,0,0,2,0,0,12,50
 Chad Ruhwedel,PIT,D,41,2,4,6,4,12,44,0,0,0,0,0,74,25
-Jacob De La Rose,STL,C,50,2,7,9,2,10,46,0,0,0,0,0,120,16
+Jacob de La Rose,STL,C,50,2,7,9,2,10,46,0,0,0,0,0,120,16
 Connor Clifton,BOS,D,31,2,0,2,4,12,20,0,0,0,0,0,90,33
 Brayden McNabb,VGK,D,71,2,7,9,1,40,73,0,0,0,1,0,201,133
 Jon Merrill,DET,D,49,2,5,7,9,32,37,0,0,0,0,1,51,71
@@ -612,7 +612,7 @@ Charles Hudon,MON,LW,15,1,1,2,-9,0,22,1,0,0,0,0,25,2
 Matt Benning,NSH,D,43,1,7,8,8,15,38,0,0,0,0,0,78,34
 Alan Quine,EDM,C,9,1,0,1,-1,4,12,0,0,0,0,0,6,2
 Adam Pelech,NYI,D,38,1,8,9,4,20,49,0,0,0,0,2,81,83
-Mikhail Vorobyov,PHI,C,20,1,2,3,-5,6,15,0,0,0,0,0,4,3
+Mikhail Vorobyev,PHI,C,20,1,2,3,-5,6,15,0,0,0,0,0,4,3
 Cole Bardreau,NYI,LW,10,1,1,2,-2,6,10,1,0,0,0,0,21,1
 Patrick Brown,VGK,C,1,1,0,1,0,0,2,0,0,0,0,0,6,0
 Ron Hainsey,FA,D,64,1,11,12,10,12,43,1,0,0,0,3,51,102
@@ -667,7 +667,7 @@ Daniel Carr,WAS,LW,11,1,0,1,-5,4,14,0,0,0,0,0,10,2
 Karson Kuhlman,BOS,C,25,1,5,6,3,13,45,0,1,0,0,0,36,8
 Rasmus Asplund,BUF,C,29,1,2,3,-4,6,36,0,0,0,0,1,20,7
 Klim Kostin,STL,RW,4,1,0,1,1,0,5,0,0,0,0,0,6,0
-Yegor Korshkov,TOR,RW,1,1,0,1,1,0,1,0,0,0,0,0,1,0
+Egor Korshkov,TOR,RW,1,1,0,1,1,0,1,0,0,0,0,0,1,0
 Rudolfs Balcers,OTT,LW,15,1,2,3,-2,0,23,1,0,0,0,0,19,7
 Lukas Vejdemo,MON,C,7,1,0,1,0,0,7,0,0,0,0,0,8,3
 Maxim Letunov,SJ,C,3,1,0,1,0,0,3,0,0,0,0,0,0,1
@@ -819,7 +819,7 @@ Nick Seeler,CHI,D,12,0,1,1,-8,15,5,0,0,0,0,0,19,21
 Brendan Gaunce,FA,C,1,0,1,1,1,2,0,0,0,0,0,0,2,0
 Jayson Megna,COL,LW,8,0,0,0,-1,2,4,0,0,0,0,0,10,5
 Jake Bischoff,VGK,D,4,0,0,0,-2,4,6,0,0,0,0,0,8,8
-Nicolas Petan,TOR,C,16,0,3,3,-4,4,19,0,0,0,0,0,7,4
+Nic Petan,TOR,C,16,0,3,3,-4,4,19,0,0,0,0,0,7,4
 Peter Cehlarik,BOS,LW,3,0,1,1,-1,2,0,0,0,0,0,0,2,2
 Ben Street,NJ,C,3,0,1,1,1,0,4,0,0,0,0,0,3,0
 Michael Chaput,ARI,C,2,0,0,0,-2,2,2,0,0,0,0,0,3,2
@@ -878,7 +878,7 @@ Brett Seney,NJ,LW,2,0,0,0,-1,0,1,0,0,0,0,0,2,0
 Cameron Hughes,BOS,C,1,0,0,0,-1,0,0,0,0,0,0,0,1,2
 Kole Sherwood,CLS,C,3,0,0,0,0,2,6,0,0,0,0,0,10,1
 Ilya Lyubushkin,ARI,D,51,0,4,4,4,18,41,0,0,0,0,0,151,53
-Jean-Christophe Beaudin,OTT,C,22,0,1,1,-4,7,18,0,0,0,0,0,51,11
+J.C. Beaudin,OTT,C,22,0,1,1,-4,7,18,0,0,0,0,0,51,11
 Gabriel Carlsson,CLS,D,6,0,0,0,-1,2,3,0,0,0,0,0,5,0
 Anton Lindholm,CHI,D,4,0,1,1,1,0,1,0,0,0,0,0,5,5
 Ryan MacInnis,CLS,C,10,0,1,1,1,0,13,0,0,0,0,0,8,3
