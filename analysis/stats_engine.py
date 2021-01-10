@@ -111,6 +111,15 @@ class StatsEngine:
         record.index = record['player_name']
         return record
 
+    def project_stats(self, season: int) -> None:
+        """
+        project each players stats for a given seasn
+        :param season: the season to project
+        :return: None
+        """
+        for player, skater in self.skaters.items():
+            skater.project_stats(season)
+
     @staticmethod
     def keep_categories(df: pd.DataFrame, categories: list) -> pd.DataFrame:
         """

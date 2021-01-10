@@ -5,7 +5,7 @@
     @details
    
 """
-
+import numpy as np
 from analysis.stats_types import BasicSkaterStats, AdvancedSkaterStats, SkaterSerializer
 
 
@@ -61,8 +61,28 @@ class Skater:
         seasonal_data_basic = list()
         seasonal_data_advanced = list()
         for season in seasons:
-            seasonal_data_basic.append([val for key, val in self.basic_stats[season]])
-            seasonal_data_advanced.append([val for key, val in self.advanced_stats[season]])
+            seasonal_data_basic.append([val for key, val in self.basic_stats[season].stats.items()])
+            seasonal_data_advanced.append([val for key, val in self.advanced_stats[season].stats.items()])
         # average the data across the seasons now
+        new_basic = list()
+        for idx in range(len(BasicSkaterStats.fields)):
+            fields = [x.pop(0) for x in seasonal_data_basic]
+            try:
+                new_basic.append(np.average(fields))
+            except Exception as ce:
+                new_basic.append(fields[0])
+
+        new_advanced = list()
+        for idx in range(len(AdvancedSkaterStats.fields)):
+            fields = [x.pop(0) for x in seasonal_data_advanced]
+            try:
+                new_advanced.append(np.average(fields))
+            except Exception as ce:
+                new_advanced.append(fields[0])
+
+        self.advanced_stats[project_season] = AdvancedSkaterStats(new_advanced)
+        self.basic_stats[project_season] = BasicSkaterStats(new_basic)
+
+
 
 

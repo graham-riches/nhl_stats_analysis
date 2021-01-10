@@ -27,6 +27,10 @@ for year in years:
     engine.add_basic_skater_from_csv('../data/skaters/basic/{}.csv'.format(year), year)
     engine.add_advanced_skater_from_csv('../data/skaters/advanced/{}.csv'.format(year), year)
 
+
+# project out 2021 stats, which has a very buggy API at the moment :D requires using 2020 as the year
+engine.project_stats(2020)
+
 # drop any players not contained in the last season
 engine.constrain_by_year(2019)
 
