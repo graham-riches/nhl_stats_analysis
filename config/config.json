@@ -34,12 +34,11 @@
     "shot_through_pct"
     ],
     "display_categories": ["position", "toi_60", "toi_ev"],
-    "fantasy_categories": ["goals", "assists", "power_play_goals", "short_handed_goals", "game_winning_goals",
-                           "penalty_mins"],
+    "fantasy_categories": ["goals", "assists", "power_play_goals", "power_play_assists", "shots_on_goal", "hits"],
     "positional_adjustments" : {
-        "D": [2.0, 2.5, 2.0, 3.0, 2.0, 0.25],
-        "C": [1.0, 1.5, 2.0, 3.0, 2.0, 0.25],
-        "LW": [1.0, 1.5, 2.0, 3.0, 2.0, 0.25],
-        "RW": [1.0, 1.5, 2.0, 3.0, 2.0, 0.25]
+        "D": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+        "C": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+        "LW": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+        "RW": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
     }
 }

@@ -34,6 +34,9 @@ engine.project_stats(2020)
 # drop any players not contained in the last season
 engine.constrain_by_year(2019)
 
+# add the new season to the list
+years.extend([2020])
+
 for year in years:
     all_fields = displays + stats_categories
     df = engine.get_stats_by_year(year)
@@ -45,6 +48,6 @@ for year in years:
     result = pd.concat([display_df, stats_df], axis=1)
     result = engine.filter_by_category(result, 'games_played', lambda gp: gp > 35)
     result = engine.apply_positional_adjustment(result, fantasy_categories, positional_adjustments)
-    result = engine.calculate_fantasy_score(result, fantasy_categories)
-    result = result.sort_values(by='fantasy_points', ascending=False)
+    result = engine.calculate_fantasy_score(result, fantasy_categories, calculate_z_based=True)
+    result = result.sort_values(by='fantasy_points_z', ascending=False)
     result.to_csv('../data/z_score_rankings/{}.csv'.format(year))

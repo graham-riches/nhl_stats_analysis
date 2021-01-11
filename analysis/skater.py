@@ -48,41 +48,48 @@ class Skater:
         advanced_stats = self.advanced_stats[year]
         return {**basic_stats.stats, **advanced_stats.stats}
 
-    def project_stats(self, project_season: int) -> None:
+    def project_basic_stats(self, project_season: int) -> None:
         """
-        project the next season of stats based on historical data
-        :param project_season: the year to project. Requires player data from the previous season
+        project a skater's basic stats for a new season
+        :param project_season: the season to project
         :return:
         """
         seasons = self.basic_stats.keys()
         if project_season - 1 not in seasons:
             print('ERROR: player {} missing stats information for {}'.format(self.name, project_season - 1))
             return
-        seasonal_data_basic = list()
-        seasonal_data_advanced = list()
+        data = list()
         for season in seasons:
-            seasonal_data_basic.append([val for key, val in self.basic_stats[season].stats.items()])
-            seasonal_data_advanced.append([val for key, val in self.advanced_stats[season].stats.items()])
+            data.append([val for key, val in self.basic_stats[season].stats.items()])
         # average the data across the seasons now
-        new_basic = list()
+        new_data = list()
         for idx in range(len(BasicSkaterStats.fields)):
-            fields = [x.pop(0) for x in seasonal_data_basic]
+            fields = [x.pop(0) for x in data]
             try:
-                new_basic.append(np.average(fields))
+                new_data.append(np.average(fields))
             except Exception as ce:
-                new_basic.append(fields[0])
+                new_data.append(fields[0])
+        self.basic_stats[project_season] = BasicSkaterStats(new_data)
 
-        new_advanced = list()
+    def project_advanced_stats(self, project_season: int) -> None:
+        """
+        project the next season of advanced stats based on historical data
+        :param project_season: the year to project. Requires player data from the previous season
+        :return:
+        """
+        seasons = self.advanced_stats.keys()
+        if project_season - 1 not in seasons:
+            print('ERROR: player {} missing stats information for {}'.format(self.name, project_season - 1))
+            return
+        data = list()
+        for season in seasons:
+            data.append([val for key, val in self.advanced_stats[season].stats.items()])
+        # average the data across the seasons now
+        new_data = list()
         for idx in range(len(AdvancedSkaterStats.fields)):
-            fields = [x.pop(0) for x in seasonal_data_advanced]
+            fields = [x.pop(0) for x in data]
             try:
-                new_advanced.append(np.average(fields))
+                new_data.append(np.average(fields))
             except Exception as ce:
-                new_advanced.append(fields[0])
-
-        self.advanced_stats[project_season] = AdvancedSkaterStats(new_advanced)
-        self.basic_stats[project_season] = BasicSkaterStats(new_basic)
-
-
-
-
+                new_data.append(fields[0])
+        self.advanced_stats[project_season] = AdvancedSkaterStats(new_data)

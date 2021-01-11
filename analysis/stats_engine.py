@@ -118,7 +118,8 @@ class StatsEngine:
         :return: None
         """
         for player, skater in self.skaters.items():
-            skater.project_stats(season)
+            skater.project_basic_stats(season)
+            skater.project_advanced_stats(season)
 
     @staticmethod
     def keep_categories(df: pd.DataFrame, categories: list) -> pd.DataFrame:
@@ -187,15 +188,23 @@ class StatsEngine:
         return df
 
     @staticmethod
-    def calculate_fantasy_score(df: pd.DataFrame, categories: list) -> pd.DataFrame:
+    def calculate_fantasy_score(df: pd.DataFrame, categories: list, calculate_z_based: bool = False) -> pd.DataFrame:
         """
         calculate an overall fantasy score based on a set of categories
         :param df: the raw dataframe
         :param categories: list of categories
+        :param calculate_z_based: option to also calculate a z-score based fantasy score
         :return: dataframe with fantasy points
         """
         adj_categories = ['{}_adj'.format(category) for category in categories]
-        category_sets = {'fantasy_points': adj_categories}
+        z_categories = ['{}_z'.format(category) for category in categories]
+
+        category_sets = dict()
+        if calculate_z_based:
+            category_sets = {'fantasy_points': adj_categories, 'fantasy_points_z': z_categories}
+        else:
+            category_sets = {'fantasy_points': adj_categories}
+
         for field, cs in category_sets.items():
             fp_df = df.loc[:, cs]
             data = fp_df.to_numpy()
