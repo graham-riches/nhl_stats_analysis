@@ -48,13 +48,15 @@ class Skater:
         advanced_stats = self.advanced_stats[year]
         return {**basic_stats.stats, **advanced_stats.stats}
 
-    def project_basic_stats(self, project_season: int) -> None:
+    def project_basic_stats(self, project_season: int, projection: callable) -> None:
         """
         project a skater's basic stats for a new season
         :param project_season: the season to project
+        :param projection: callable that takes a collection and produces a new value
         :return:
         """
-        seasons = self.basic_stats.keys()
+        seasons = list(self.basic_stats.keys())
+        seasons.sort(reverse=True)
         if project_season - 1 not in seasons:
             print('ERROR: player {} missing stats information for {}'.format(self.name, project_season - 1))
             return
@@ -66,18 +68,20 @@ class Skater:
         for idx in range(len(BasicSkaterStats.fields)):
             fields = [x.pop(0) for x in data]
             try:
-                new_data.append(np.average(fields))
+                new_data.append(projection(fields))
             except Exception as ce:
                 new_data.append(fields[0])
         self.basic_stats[project_season] = BasicSkaterStats(new_data)
 
-    def project_advanced_stats(self, project_season: int) -> None:
+    def project_advanced_stats(self, project_season: int, projection: callable) -> None:
         """
         project the next season of advanced stats based on historical data
         :param project_season: the year to project. Requires player data from the previous season
+        :param projection: callable that takes a colleciton and produces a new value
         :return:
         """
-        seasons = self.advanced_stats.keys()
+        seasons = list(self.advanced_stats.keys())
+        seasons.sort(reverse=True)
         if project_season - 1 not in seasons:
             print('ERROR: player {} missing stats information for {}'.format(self.name, project_season - 1))
             return

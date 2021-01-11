@@ -111,15 +111,16 @@ class StatsEngine:
         record.index = record['player_name']
         return record
 
-    def project_stats(self, season: int) -> None:
+    def project_stats(self, season: int, model: callable) -> None:
         """
         project each players stats for a given seasn
         :param season: the season to project
+        :param model: projection model callable that reduces a collection of stats into a new value
         :return: None
         """
         for player, skater in self.skaters.items():
-            skater.project_basic_stats(season)
-            skater.project_advanced_stats(season)
+            skater.project_basic_stats(season, model)
+            skater.project_advanced_stats(season, model)
 
     @staticmethod
     def keep_categories(df: pd.DataFrame, categories: list) -> pd.DataFrame:
@@ -199,7 +200,6 @@ class StatsEngine:
         adj_categories = ['{}_adj'.format(category) for category in categories]
         z_categories = ['{}_z'.format(category) for category in categories]
 
-        category_sets = dict()
         if calculate_z_based:
             category_sets = {'fantasy_points': adj_categories, 'fantasy_points_z': z_categories}
         else:
