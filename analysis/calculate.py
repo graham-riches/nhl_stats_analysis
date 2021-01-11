@@ -30,10 +30,11 @@ for year in years:
     engine.add_advanced_skater_from_csv('../data/skaters/advanced/{}.csv'.format(year), year)
 
 
+
 # project out 2021 stats, which has a very buggy API at the moment :D requires using 2020 as the year since Covid
 # borked the standard seasons model. Projection method takes in a callable which can provide whatever projection
 # functionality that is required
-projection = partial(weighted_average, [4.0, 3.0, 2.0, 1.0, 1.0])
+projection = partial(weighted_average, 56, [4.0, 3.0, 2.0, 1.0, 1.0])
 engine.project_stats(2020, projection)
 
 # drop any players not contained in the last season (retired, etc.)

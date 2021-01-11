@@ -6,6 +6,7 @@
     This contains class definitions for basic and advanced player stats as well as factory methods for deserializing
     data into these object types
 """
+from datetime import datetime
 
 
 class BasicSkaterStats:

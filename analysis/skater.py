@@ -63,6 +63,7 @@ class Skater:
         data = list()
         for season in seasons:
             data.append([val for key, val in self.basic_stats[season].stats.items()])
+
         # average the data across the seasons now
         new_data = list()
         for idx in range(len(BasicSkaterStats.fields)):
