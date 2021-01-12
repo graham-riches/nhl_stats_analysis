@@ -34,7 +34,7 @@
     "shot_through_pct"
     ],
     "display_categories": ["position", "toi_60", "toi_ev"],
-    "fantasy_categories": ["goals", "assists", "power_play_goals", "power_play_assists", "shots_on_goal", "hits"],
+    "fantasy_categories": [ "goals", "assists", "power_play_goals", "power_play_assists", "shots_on_goal", "hits", "blocked_shots" ],
     "positional_adjustments" : {
         "D": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
         "C": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
