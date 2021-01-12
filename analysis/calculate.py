@@ -10,7 +10,7 @@ import pandas as pd
 import json
 from functools import partial
 from analysis.stats_engine import StatsEngine
-from analysis.projections import weighted_average, weighted_average_with_experience_adjustment
+from analysis.projections import weighted_average_with_experience_adjustment
 
 
 years = [2015, 2016, 2017, 2018, 2019]
@@ -35,8 +35,6 @@ engine.drop_by_games_played(25)
 # project out 2021 stats, which has a very buggy API at the moment :D requires using 2020 as the year since Covid
 # borked the standard seasons model. Projection method takes in a callable which can provide whatever projection
 # functionality that is required
-
-# projection = partial(weighted_average, 56, [4.0, 3.0, 2.0, 1.0, 1.0])
 projection = partial(weighted_average_with_experience_adjustment, 56, [4.0, 3.0, 2.0, 1.0, 1.0], [1.0, 1.10, 1.15, 1.0, 1.0, 1.0])
 engine.project_stats(2020, projection)
 
