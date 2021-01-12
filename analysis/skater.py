@@ -62,9 +62,8 @@ class Skater:
             return
         data = list()
         for season in seasons:
-            data.append([val for key, val in self.basic_stats[season].stats.items()])
-
-        # average the data across the seasons now
+            games_played = self.basic_stats[season].stats['games_played']
+            data.append([val/games_played if type(val) is not str else val for key, val in self.basic_stats[season].stats.items()])
         new_data = list()
         for idx in range(len(BasicSkaterStats.fields)):
             fields = [x.pop(0) for x in data]
@@ -88,13 +87,14 @@ class Skater:
             return
         data = list()
         for season in seasons:
-            data.append([val for key, val in self.advanced_stats[season].stats.items()])
-        # average the data across the seasons now
+            games_played = self.basic_stats[season].stats['games_played']
+            data.append([val/games_played if type(val) is not str else val for key, val in self.advanced_stats[season].stats.items()])
+
         new_data = list()
         for idx in range(len(AdvancedSkaterStats.fields)):
             fields = [x.pop(0) for x in data]
             try:
-                new_data.append(np.average(fields))
+                new_data.append(projection(fields))
             except Exception as ce:
                 new_data.append(fields[0])
         self.advanced_stats[project_season] = AdvancedSkaterStats(new_data)

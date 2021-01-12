@@ -85,12 +85,30 @@ class StatsEngine:
         :param year: the year to check
         :return: None
         """
-        drop_list = []
+        drop_list = list()
         for player, skater in self.skaters.items():
             if year not in skater.basic_stats.keys() and year not in skater.advanced_stats.keys():
                 drop_list.append(player)
         for player in drop_list:
             del self.skaters[player]
+
+    def drop_by_games_played(self, games_played: int) -> None:
+        """
+        For each player, drop any seasons that they did not play at least "games_player" games
+        :param games_played: threshold games played
+        :return:
+        """
+        for player, skater in self.skaters.items():
+            drop_list = list()
+            for season in skater.basic_stats.keys():
+                if skater.basic_stats[season].stats['games_played'] < games_played:
+                    drop_list.append(season)
+            for season in drop_list:
+                try:
+                    del skater.basic_stats[season]
+                    del skater.advanced_stats[season]
+                except KeyError as ke:
+                    pass
 
     def get_stats_by_year(self, year: int) -> pd.DataFrame:
         """

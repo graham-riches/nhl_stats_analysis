@@ -29,7 +29,8 @@ for year in years:
     engine.add_basic_skater_from_csv('../data/skaters/basic/{}.csv'.format(year), year)
     engine.add_advanced_skater_from_csv('../data/skaters/advanced/{}.csv'.format(year), year)
 
-
+# drop any player season without a threshold limit of games played
+engine.drop_by_games_played(25)
 
 # project out 2021 stats, which has a very buggy API at the moment :D requires using 2020 as the year since Covid
 # borked the standard seasons model. Projection method takes in a callable which can provide whatever projection
