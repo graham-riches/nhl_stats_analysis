@@ -49,7 +49,7 @@ class AdvancedSkaterStats:
             try:
                 self.stats[key] = types[idx](stats[idx])
             except Exception as ce:
-                print('Advanced Stats Error: {}'.format(ce))
+                print('Advanced Stats Error at Key {} {}: {}'.format(key, stats[idx], ce))
                 self.stats[key] = types[idx]()
 
 

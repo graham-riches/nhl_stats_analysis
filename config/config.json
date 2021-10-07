@@ -36,9 +36,9 @@
     "display_categories": ["position", "toi_60", "toi_ev"],
     "fantasy_categories": [ "goals", "assists", "power_play_goals", "power_play_assists", "shots_on_goal", "hits", "blocked_shots" ],
     "positional_adjustments" : {
-        "D": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
-        "C": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
-        "LW": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
-        "RW": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+        "D": [3.0, 2.0, 1.0, 1.0, 0.3, 0.3, 0.3],
+        "C": [3.0, 2.0, 1.0, 1.0, 0.3, 0.3, 0.3],
+        "LW": [3.0, 2.0, 1.0, 1.0, 0.3, 0.3, 0.3],
+        "RW": [3.0, 2.0, 1.0, 1.0, 0.3, 0.3, 0.3]
     }
 }

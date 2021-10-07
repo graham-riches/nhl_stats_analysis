@@ -13,7 +13,7 @@ from analysis.stats_engine import StatsEngine
 from analysis.projections import weighted_average_with_experience_adjustment
 
 
-years = [2015, 2016, 2017, 2018, 2019]
+years = [2015, 2016, 2017, 2018, 2019, 2020]
 with open('../config/config.json') as json_file:
     config = json.loads(str(json_file.read()))
     stats_categories = config['stats_categories']
@@ -35,14 +35,16 @@ engine.drop_by_games_played(25)
 # project out 2021 stats, which has a very buggy API at the moment :D requires using 2020 as the year since Covid
 # borked the standard seasons model. Projection method takes in a callable which can provide whatever projection
 # functionality that is required
-projection = partial(weighted_average_with_experience_adjustment, 56, [4.0, 3.0, 2.0, 1.0, 1.0], [1.0, 1.10, 1.15, 1.0, 1.0, 1.0])
-engine.project_stats(2020, projection)
+projection = partial(weighted_average_with_experience_adjustment, 82,
+                     [4.0, 3.0, 2.0, 1.0, 1.0, 1.0],
+                     [1.0, 1.10, 1.15, 1.0, 1.0, 1.0, 1.0])
+engine.project_stats(2021, projection)
 
 # drop any players not contained in the last season (retired, etc.)
-engine.constrain_by_year(2019)
+engine.constrain_by_year(2020)
 
 # add the new season to the list
-years.extend([2020])
+years.append(2021)
 
 # do some filtering and ranking and store the result in a new csv
 for year in years:

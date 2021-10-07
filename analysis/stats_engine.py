@@ -77,6 +77,7 @@ class StatsEngine:
         :param year: the year of the data
         :return: None
         """
+        print('adding: {}', filename)
         self.read_from_csv(filename, self.basic_skater_parser, year)
 
     def constrain_by_year(self, year: int) -> None:
@@ -131,7 +132,7 @@ class StatsEngine:
 
     def project_stats(self, season: int, model: callable) -> None:
         """
-        project each players stats for a given seasn
+        project each players stats for a given season
         :param season: the season to project
         :param model: projection model callable that reduces a collection of stats into a new value
         :return: None
