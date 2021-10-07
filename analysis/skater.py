@@ -5,9 +5,8 @@
     @details
    
 """
-import numpy as np
 from analysis.stats_types import BasicSkaterStats, AdvancedSkaterStats, SkaterSerializer
-
+from analysis.colors import TerminalColors
 
 class Skater:
     def __init__(self, player_name: str):
@@ -58,7 +57,6 @@ class Skater:
         seasons = list(self.basic_stats.keys())
         seasons.sort(reverse=True)
         if project_season - 1 not in seasons:
-            print('ERROR: player {} missing stats information for {}'.format(self.name, project_season - 1))
             return
         data = list()
         for season in seasons:
@@ -72,6 +70,7 @@ class Skater:
             except Exception as ce:
                 new_data.append(fields[0])
         self.basic_stats[project_season] = BasicSkaterStats(new_data)
+        print(TerminalColors.GREEN + 'Projected basic stats for {}'.format(self.name) + TerminalColors.END)
 
     def project_advanced_stats(self, project_season: int, projection: callable) -> None:
         """
@@ -83,7 +82,6 @@ class Skater:
         seasons = list(self.advanced_stats.keys())
         seasons.sort(reverse=True)
         if project_season - 1 not in seasons:
-            print('ERROR: player {} missing stats information for {}'.format(self.name, project_season - 1))
             return
         data = list()
         for season in seasons:
@@ -98,3 +96,4 @@ class Skater:
             except Exception as ce:
                 new_data.append(fields[0])
         self.advanced_stats[project_season] = AdvancedSkaterStats(new_data)
+        print(TerminalColors.GREEN + 'Projected advanced stats for {}'.format(self.name) + TerminalColors.END)

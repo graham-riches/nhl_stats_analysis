@@ -6,8 +6,6 @@
     This contains class definitions for basic and advanced player stats as well as factory methods for deserializing
     data into these object types
 """
-from datetime import datetime
-
 
 class BasicSkaterStats:
     fields = ['team', 'position', 'games_played', 'goals', 'assists', 'pts', 'plus_minus',
@@ -27,7 +25,6 @@ class BasicSkaterStats:
             try:
                 self.stats[key] = types[idx](stats[idx])
             except Exception as ce:
-                print('Basic Stats Error: {}'.format(ce))
                 self.stats[key] = types[idx]()
 
 
@@ -49,7 +46,6 @@ class AdvancedSkaterStats:
             try:
                 self.stats[key] = types[idx](stats[idx])
             except Exception as ce:
-                print('Advanced Stats Error at Key {} {}: {}'.format(key, stats[idx], ce))
                 self.stats[key] = types[idx]()
 
 

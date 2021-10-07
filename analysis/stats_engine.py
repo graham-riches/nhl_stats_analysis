@@ -8,8 +8,7 @@
 import numpy as np
 import pandas as pd
 from analysis.skater import Skater
-from analysis.stats_types import  SkaterSerializer
-
+from analysis.stats_types import SkaterSerializer
 
 class StatsEngine:
     def __init__(self):
@@ -77,7 +76,6 @@ class StatsEngine:
         :param year: the year of the data
         :return: None
         """
-        print('adding: {}', filename)
         self.read_from_csv(filename, self.basic_skater_parser, year)
 
     def constrain_by_year(self, year: int) -> None:
@@ -125,7 +123,7 @@ class StatsEngine:
                 data = skater.get_stats_by_year(year)
                 stats.append([name] + [data[column] for column in columns])
             except KeyError as ce:
-                print('{} stats not available for player: {}'.format(ce, name))
+                pass
         record = pd.DataFrame.from_records(stats, columns=header)
         record.index = record['player_name']
         return record

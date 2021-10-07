@@ -1,5 +1,5 @@
 """
-    @file calculate.py
+    @file run_stats_engine.py
     @brief main file to crunch all fantasy stats
     @author Graham Riches
     @details
@@ -11,10 +11,10 @@ import json
 from functools import partial
 from analysis.stats_engine import StatsEngine
 from analysis.projections import weighted_average_with_experience_adjustment
-
+from analysis.colors import TerminalColors
 
 years = [2015, 2016, 2017, 2018, 2019, 2020]
-with open('../config/config.json') as json_file:
+with open('config/config.json') as json_file:
     config = json.loads(str(json_file.read()))
     stats_categories = config['stats_categories']
     fantasy_categories = config['fantasy_categories']
@@ -26,15 +26,13 @@ engine = StatsEngine()
 
 # read in the data
 for year in years:
-    engine.add_basic_skater_from_csv('../data/skaters/basic/{}.csv'.format(year), year)
-    engine.add_advanced_skater_from_csv('../data/skaters/advanced/{}.csv'.format(year), year)
+    engine.add_basic_skater_from_csv('data/skaters/basic/{}.csv'.format(year), year)
+    engine.add_advanced_skater_from_csv('data/skaters/advanced/{}.csv'.format(year), year)
 
 # drop any player season without a threshold limit of games played
 engine.drop_by_games_played(25)
 
-# project out 2021 stats, which has a very buggy API at the moment :D requires using 2020 as the year since Covid
-# borked the standard seasons model. Projection method takes in a callable which can provide whatever projection
-# functionality that is required
+# set seasonal weighting to more heavily weight recent performances
 projection = partial(weighted_average_with_experience_adjustment, 82,
                      [4.0, 3.0, 2.0, 1.0, 1.0, 1.0],
                      [1.0, 1.10, 1.15, 1.0, 1.0, 1.0, 1.0])
@@ -60,4 +58,16 @@ for year in years:
     result = engine.apply_positional_adjustment(result, fantasy_categories, positional_adjustments)
     result = engine.calculate_fantasy_score(result, fantasy_categories, calculate_z_based=True)
     result = result.sort_values(by='fantasy_points_z', ascending=False)
-    result.to_csv('../data/z_score_rankings/{}.csv'.format(year))
+    result.to_csv('data/z_score_rankings/{}.csv'.format(year))
+
+print('\n\n' + TerminalColors.BLUE + 'Projected 2021/2022 stats ...\n' + TerminalColors.END)
+
+df_new = pd.read_csv('data/z_score_rankings/2021.csv')
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', 500)
+columns = ['player_name', 'position']
+columns.extend(fantasy_categories)
+columns.append('fantasy_points_z')
+print(df_new[columns][0:100])
+
